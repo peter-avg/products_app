@@ -1,8 +1,9 @@
+import uvicorn
 from app.api import app
 
 
 def main():
-    app.run()
+    uvicorn.run(app, host="0.0.0.0", port=5000, reload=True)
 
 
 if __name__ == "__main__":
